@@ -19,11 +19,14 @@ Check out the demo video: [Watch Demo](https://vimeo.com/1093519577?share=copy#t
 
 ## Prerequisites
 
-- Node.js (v14 or higher)
+### System Requirements
+- Node.js and npm (see [frontend/requirements.txt](frontend/requirements.txt))
 - Python 3.8 or higher
 - PostgreSQL database
 
-## Backend Setup
+## Installation
+
+### Backend Setup
 
 1. Navigate to the backend directory:
    ```bash
@@ -51,7 +54,7 @@ Check out the demo video: [Watch Demo](https://vimeo.com/1093519577?share=copy#t
    ```
    The backend will run on http://localhost:5000
 
-## Frontend Setup
+### Frontend Setup
 
 1. Navigate to the frontend directory:
    ```bash
