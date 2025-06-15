@@ -14,22 +14,22 @@ const Header = ({ onAddJob, jobCount, loading }) => {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-        <div className="flex justify-between items-center py-12">
-          <div className="space-y-6">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center py-8 md:py-12">
+          <div className="space-y-4 md:space-y-6 w-full md:w-auto">
             <div className="space-y-2">
-              <h1 className="text-5xl font-bold mb-2 bg-clip-text text-transparent bg-gradient-to-r from-white to-primary-100 animate-fade-in">
+              <h1 className="text-4xl md:text-5xl font-bold mb-2 bg-clip-text text-transparent bg-gradient-to-r from-white to-primary-100 animate-fade-in">
                 <Link to="/" className="hover:underline focus:outline-none focus:ring-0 rounded">
                   Job Board
                 </Link>
               </h1>
-              <p className="text-primary-100 text-xl font-light tracking-wide">
+              <p className="text-primary-100 text-lg md:text-xl font-light tracking-wide">
                 Discover your next career opportunity
               </p>
             </div>
             
-            <div className="flex items-center space-x-8 mt-6 text-sm">
-              <div className="flex items-center space-x-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
-                <svg className="w-5 h-5 text-primary-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="flex flex-wrap items-center gap-4 md:gap-8 mt-4 md:mt-6 text-sm">
+              <div className="flex items-center space-x-2 bg-white/10 backdrop-blur-sm px-3 md:px-4 py-2 rounded-full">
+                <svg className="w-4 md:w-5 h-4 md:h-5 text-primary-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -39,8 +39,8 @@ const Header = ({ onAddJob, jobCount, loading }) => {
                 </svg>
                 <span className="font-medium">{loading ? "..." : jobCount} Active Jobs</span>
               </div>
-              <div className="flex items-center space-x-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
-                <svg className="w-5 h-5 text-primary-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="flex items-center space-x-2 bg-white/10 backdrop-blur-sm px-3 md:px-4 py-2 rounded-full">
+                <svg className="w-4 md:w-5 h-4 md:h-5 text-primary-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -50,8 +50,8 @@ const Header = ({ onAddJob, jobCount, loading }) => {
                 </svg>
                 <span className="font-medium">Multiple Companies</span>
               </div>
-              <div className="flex items-center space-x-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
-                <svg className="w-5 h-5 text-primary-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="flex items-center space-x-2 bg-white/10 backdrop-blur-sm px-3 md:px-4 py-2 rounded-full">
+                <svg className="w-4 md:w-5 h-4 md:h-5 text-primary-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -64,10 +64,10 @@ const Header = ({ onAddJob, jobCount, loading }) => {
             </div>
           </div>
           
-          <div className="flex flex-col items-end space-y-4">
+          <div className="flex flex-col items-center md:items-end space-y-2 md:space-y-4 mt-6 md:mt-0 w-full md:w-auto">
             <button
               onClick={onAddJob}
-              className="group bg-white text-primary-600 hover:bg-primary-50 font-semibold py-3.5 px-8 rounded-xl transition-all duration-300 flex items-center space-x-3 shadow-lg hover:shadow-xl hover:scale-105 transform"
+              className="w-full md:w-auto group bg-white text-primary-600 hover:bg-primary-50 font-semibold py-3 md:py-3.5 px-6 md:px-8 rounded-xl transition-all duration-300 flex items-center justify-center space-x-3 shadow-lg hover:shadow-xl hover:scale-105 transform"
             >
               <svg className="w-5 h-5 transition-transform duration-300 group-hover:rotate-90" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
